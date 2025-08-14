@@ -1,0 +1,1727 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "cccl": {
+        "pkg-path": "cudaPackages.cuda_cccl",
+        "priority": 3
+      },
+      "cmake": {
+        "pkg-path": "cmake"
+      },
+      "cublas": {
+        "pkg-path": "cudaPackages.libcublas"
+      },
+      "cuda_profiler_api": {
+        "pkg-path": "cudaPackages.cuda_profiler_api",
+        "priority": 6
+      },
+      "cufft": {
+        "pkg-path": "cudaPackages.libcufft",
+        "priority": 4
+      },
+      "curand": {
+        "pkg-path": "cudaPackages.libcurand"
+      },
+      "cusolver": {
+        "pkg-path": "cudaPackages.libcusolver"
+      },
+      "cusparse": {
+        "pkg-path": "cudaPackages.libcusparse"
+      },
+      "freeimage": {
+        "pkg-path": "freeimage",
+        "pkg-group": "freeimage"
+      },
+      "gcc": {
+        "pkg-path": "gcc"
+      },
+      "gl": {
+        "pkg-path": "libGL",
+        "pkg-group": "opengl"
+      },
+      "glfw": {
+        "pkg-path": "glfw-wayland",
+        "pkg-group": "vulkan"
+      },
+      "glu": {
+        "pkg-path": "libGLU",
+        "pkg-group": "opengl"
+      },
+      "gnumake": {
+        "pkg-path": "gnumake"
+      },
+      "libglut": {
+        "pkg-path": "libglut",
+        "pkg-group": "libglut"
+      },
+      "mpi": {
+        "pkg-path": "mpi",
+        "pkg-group": "mpi"
+      },
+      "npp": {
+        "pkg-path": "cudaPackages.libnpp"
+      },
+      "nvcc": {
+        "pkg-path": "cudaPackages.cuda_nvcc"
+      },
+      "nvjitlink": {
+        "pkg-path": "cudaPackages.libnvjitlink"
+      },
+      "nvjpeg": {
+        "pkg-path": "cudaPackages.libnvjpeg"
+      },
+      "nvrtc": {
+        "pkg-path": "cudaPackages.cuda_nvrtc"
+      },
+      "nvtx": {
+        "pkg-path": "cudaPackages.cuda_nvtx"
+      },
+      "rt": {
+        "pkg-path": "cudaPackages.cuda_cudart",
+        "priority": 4
+      },
+      "vulkan-headers": {
+        "pkg-path": "vulkan-headers",
+        "pkg-group": "vulkan"
+      },
+      "vulkan-loader": {
+        "pkg-path": "vulkan-loader",
+        "pkg-group": "vulkan"
+      },
+      "x11": {
+        "pkg-path": "x11",
+        "pkg-group": "x11"
+      }
+    },
+    "options": {
+      "systems": [
+        "x86_64-linux",
+        "aarch64-linux"
+      ]
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "freeimage",
+      "broken": false,
+      "derivation": "/nix/store/nclshiqk9j4xi4qjp944wkr9xkghljjy-freeimage-unstable-2021-11-01.drv",
+      "description": "Open Source library for accessing popular graphics image file formats",
+      "install_id": "freeimage",
+      "license": "GPL",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b98a4e1746acceb92c509bc496ef3d0e5ad8d4aa",
+      "name": "freeimage-unstable-2021-11-01",
+      "pname": "freeimage",
+      "rev": "b98a4e1746acceb92c509bc496ef3d0e5ad8d4aa",
+      "rev_count": 585741,
+      "rev_date": "2024-02-18T22:48:35Z",
+      "scrape_date": "2024-06-13T20:04:15Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2021-11-01",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/8kykya60dy2kjpjv729w82hz04908dna-freeimage-unstable-2021-11-01"
+      },
+      "system": "aarch64-linux",
+      "group": "freeimage",
+      "priority": 5
+    },
+    {
+      "attr_path": "freeimage",
+      "broken": false,
+      "derivation": "/nix/store/4qjq064bpyr09ifasb2mbbbq88q62jz7-freeimage-unstable-2021-11-01.drv",
+      "description": "Open Source library for accessing popular graphics image file formats",
+      "install_id": "freeimage",
+      "license": "GPL",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b98a4e1746acceb92c509bc496ef3d0e5ad8d4aa",
+      "name": "freeimage-unstable-2021-11-01",
+      "pname": "freeimage",
+      "rev": "b98a4e1746acceb92c509bc496ef3d0e5ad8d4aa",
+      "rev_count": 585741,
+      "rev_date": "2024-02-18T22:48:35Z",
+      "scrape_date": "2024-06-13T20:04:15Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2021-11-01",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/q2sc85f2hclgwl8m3qdw8rpbs44gzmah-freeimage-unstable-2021-11-01"
+      },
+      "system": "x86_64-linux",
+      "group": "freeimage",
+      "priority": 5
+    },
+    {
+      "attr_path": "libglut",
+      "broken": false,
+      "derivation": "/nix/store/wk802amsw0x7fy46a0kg1bayzmj1mq9q-freeglut-3.6.0.drv",
+      "description": "Create and manage windows containing OpenGL contexts",
+      "install_id": "libglut",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=979daf34c8cacebcd917d540070b52a3c2b9b16e",
+      "name": "freeglut-3.6.0",
+      "pname": "libglut",
+      "rev": "979daf34c8cacebcd917d540070b52a3c2b9b16e",
+      "rev_count": 793735,
+      "rev_date": "2025-05-04T03:14:55Z",
+      "scrape_date": "2025-05-05T04:37:23.127847Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.6.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/ck2ylwxzgi6zxxyfwp8i9kbwdyvfbdn2-freeglut-3.6.0-dev",
+        "out": "/nix/store/l8pcmp8vdqda8ksxvgindisfnqip659x-freeglut-3.6.0"
+      },
+      "system": "aarch64-linux",
+      "group": "libglut",
+      "priority": 5
+    },
+    {
+      "attr_path": "libglut",
+      "broken": false,
+      "derivation": "/nix/store/n3lgp9lpqipdcfxvppjl3pl0mkz3jnlc-freeglut-3.6.0.drv",
+      "description": "Create and manage windows containing OpenGL contexts",
+      "install_id": "libglut",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=979daf34c8cacebcd917d540070b52a3c2b9b16e",
+      "name": "freeglut-3.6.0",
+      "pname": "libglut",
+      "rev": "979daf34c8cacebcd917d540070b52a3c2b9b16e",
+      "rev_count": 793735,
+      "rev_date": "2025-05-04T03:14:55Z",
+      "scrape_date": "2025-05-05T05:15:58.280279Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.6.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/zg79fmb10pq9j214kss93yxkzw8171xq-freeglut-3.6.0-dev",
+        "out": "/nix/store/0k5pp6d69hgy4rvq3kn8476fl2rwqj92-freeglut-3.6.0"
+      },
+      "system": "x86_64-linux",
+      "group": "libglut",
+      "priority": 5
+    },
+    {
+      "attr_path": "mpi",
+      "broken": false,
+      "derivation": "/nix/store/4wcvjm8n6s5ywzcq997y3v5jxvl61zhh-openmpi-5.0.6.drv",
+      "description": "Open source MPI-3 implementation",
+      "install_id": "mpi",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "openmpi-5.0.6",
+      "pname": "mpi",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:22.831729Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.0.6",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/p37kjcqdkh2207brc2nx5ycgkc2yhxsk-openmpi-5.0.6-dev",
+        "man": "/nix/store/9n1z3mrddpbzrzy4p2v6p5csfbcqdgix-openmpi-5.0.6-man",
+        "out": "/nix/store/jcaggrsc0s2nv1iphjklx01lmb80h9qh-openmpi-5.0.6"
+      },
+      "system": "aarch64-linux",
+      "group": "mpi",
+      "priority": 5
+    },
+    {
+      "attr_path": "mpi",
+      "broken": false,
+      "derivation": "/nix/store/ird3cfag5pxr3x4smp5skn03fy2zsqsx-openmpi-5.0.6.drv",
+      "description": "Open source MPI-3 implementation",
+      "install_id": "mpi",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "openmpi-5.0.6",
+      "pname": "mpi",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:15.165131Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.0.6",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/bbila6b7lglv1rh5nhdd0dphkfx1hrva-openmpi-5.0.6-dev",
+        "man": "/nix/store/690g7zaanmhk8f5f60np6x23g00g6hzg-openmpi-5.0.6-man",
+        "out": "/nix/store/mn9qi6z5pqfbffqslypdddcjcdpalni5-openmpi-5.0.6"
+      },
+      "system": "x86_64-linux",
+      "group": "mpi",
+      "priority": 5
+    },
+    {
+      "attr_path": "libGL",
+      "broken": false,
+      "derivation": "/nix/store/xj7zq5bxn77vs8abab9f3kba63s5nnxr-libglvnd-1.7.0.drv",
+      "description": "GL Vendor-Neutral Dispatch library",
+      "install_id": "gl",
+      "license": "[ MIT, BSD-1-Clause, BSD-3-Clause, GPL-3.0-only, Apache-2.0 ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=979daf34c8cacebcd917d540070b52a3c2b9b16e",
+      "name": "libglvnd-1.7.0",
+      "pname": "libGL",
+      "rev": "979daf34c8cacebcd917d540070b52a3c2b9b16e",
+      "rev_count": 793735,
+      "rev_date": "2025-05-04T03:14:55Z",
+      "scrape_date": "2025-05-05T04:37:22.966919Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/qc4jm6503nfswsxdzwl50ivydc5xdwg6-libglvnd-1.7.0-dev",
+        "out": "/nix/store/cgf20z6c43wvayclc4jnrr6vjliz96hs-libglvnd-1.7.0"
+      },
+      "system": "aarch64-linux",
+      "group": "opengl",
+      "priority": 5
+    },
+    {
+      "attr_path": "libGL",
+      "broken": false,
+      "derivation": "/nix/store/sk44b5gdgkn4dnlbfx1q7i3ldk96qs7x-libglvnd-1.7.0.drv",
+      "description": "GL Vendor-Neutral Dispatch library",
+      "install_id": "gl",
+      "license": "[ MIT, BSD-1-Clause, BSD-3-Clause, GPL-3.0-only, Apache-2.0 ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=979daf34c8cacebcd917d540070b52a3c2b9b16e",
+      "name": "libglvnd-1.7.0",
+      "pname": "libGL",
+      "rev": "979daf34c8cacebcd917d540070b52a3c2b9b16e",
+      "rev_count": 793735,
+      "rev_date": "2025-05-04T03:14:55Z",
+      "scrape_date": "2025-05-05T05:15:58.109176Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/fax005wb0br7zmdrkr34zb14z53kq7nl-libglvnd-1.7.0-dev",
+        "out": "/nix/store/sq50878z0rdxwdyjw3fvbgf6wkpcnpcp-libglvnd-1.7.0"
+      },
+      "system": "x86_64-linux",
+      "group": "opengl",
+      "priority": 5
+    },
+    {
+      "attr_path": "libGLU",
+      "broken": false,
+      "derivation": "/nix/store/gvj39wi8p57s9ly3hajf9d6p19ik15kc-glu-9.0.3.drv",
+      "description": "OpenGL utility library",
+      "install_id": "glu",
+      "license": "SGI-B-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=979daf34c8cacebcd917d540070b52a3c2b9b16e",
+      "name": "glu-9.0.3",
+      "pname": "libGLU",
+      "rev": "979daf34c8cacebcd917d540070b52a3c2b9b16e",
+      "rev_count": 793735,
+      "rev_date": "2025-05-04T03:14:55Z",
+      "scrape_date": "2025-05-05T04:37:22.967414Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "9.0.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/dr2zl7lyddhrvzpj5p7awcbhz7wxsr05-glu-9.0.3-dev",
+        "out": "/nix/store/zm1xfl947i1fsabmna4lkdcn2fn7kk6c-glu-9.0.3"
+      },
+      "system": "aarch64-linux",
+      "group": "opengl",
+      "priority": 5
+    },
+    {
+      "attr_path": "libGLU",
+      "broken": false,
+      "derivation": "/nix/store/i87n847x5xix7jw1xkrgdkkhin65h5c0-glu-9.0.3.drv",
+      "description": "OpenGL utility library",
+      "install_id": "glu",
+      "license": "SGI-B-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=979daf34c8cacebcd917d540070b52a3c2b9b16e",
+      "name": "glu-9.0.3",
+      "pname": "libGLU",
+      "rev": "979daf34c8cacebcd917d540070b52a3c2b9b16e",
+      "rev_count": 793735,
+      "rev_date": "2025-05-04T03:14:55Z",
+      "scrape_date": "2025-05-05T05:15:58.109691Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "9.0.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/clrl18rc0rnrij3crwrzks9agk9pbgmi-glu-9.0.3-dev",
+        "out": "/nix/store/wj7zcwyagwgigh7np6z8qcscw0wm0lbs-glu-9.0.3"
+      },
+      "system": "x86_64-linux",
+      "group": "opengl",
+      "priority": 5
+    },
+    {
+      "attr_path": "glfw-wayland",
+      "broken": false,
+      "derivation": "/nix/store/zwahmvlx89v1kgz63ylicx12rvb4jcpm-glfw-3.4.drv",
+      "description": "Multi-platform library for creating OpenGL contexts and managing input, including keyboard, mouse, joystick and time",
+      "install_id": "glfw",
+      "license": "Zlib",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "glfw-3.4",
+      "pname": "glfw-wayland",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:11.884718Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rk97952k6c9l2nk76q9nskgpn8kpb8dk-glfw-3.4"
+      },
+      "system": "aarch64-linux",
+      "group": "vulkan",
+      "priority": 5
+    },
+    {
+      "attr_path": "glfw-wayland",
+      "broken": false,
+      "derivation": "/nix/store/im0pc1yxipijk9ap995bn1x5187aqnxk-glfw-3.4.drv",
+      "description": "Multi-platform library for creating OpenGL contexts and managing input, including keyboard, mouse, joystick and time",
+      "install_id": "glfw",
+      "license": "Zlib",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "glfw-3.4",
+      "pname": "glfw-wayland",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:02.090178Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0qrk5a9l4d9ic70vx7vkk1bcv10mjlgj-glfw-3.4"
+      },
+      "system": "x86_64-linux",
+      "group": "vulkan",
+      "priority": 5
+    },
+    {
+      "attr_path": "vulkan-headers",
+      "broken": false,
+      "derivation": "/nix/store/6gx7kpqyhyqg9fx6iknmcfbyviif0myk-vulkan-headers-1.4.313.0.drv",
+      "description": "Vulkan Header files and API registry",
+      "install_id": "vulkan-headers",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "vulkan-headers-1.4.313.0",
+      "pname": "vulkan-headers",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:37:26.337966Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.4.313.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ibf0v1i547bjhgy1k6vjl3dhjcdqkd9y-vulkan-headers-1.4.313.0"
+      },
+      "system": "aarch64-linux",
+      "group": "vulkan",
+      "priority": 5
+    },
+    {
+      "attr_path": "vulkan-headers",
+      "broken": false,
+      "derivation": "/nix/store/v4p53p9pwjrgmrj27z3rsg7yfskx5qas-vulkan-headers-1.4.313.0.drv",
+      "description": "Vulkan Header files and API registry",
+      "install_id": "vulkan-headers",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "vulkan-headers-1.4.313.0",
+      "pname": "vulkan-headers",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:14:26.743913Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.4.313.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ffmw6737gmngn5ycnsna1dmg3ai19vc2-vulkan-headers-1.4.313.0"
+      },
+      "system": "x86_64-linux",
+      "group": "vulkan",
+      "priority": 5
+    },
+    {
+      "attr_path": "vulkan-loader",
+      "broken": false,
+      "derivation": "/nix/store/mqzwhp6qzmn49wvla21hyr234nafnm8p-vulkan-loader-1.4.313.0.drv",
+      "description": "LunarG Vulkan loader",
+      "install_id": "vulkan-loader",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "vulkan-loader-1.4.313.0",
+      "pname": "vulkan-loader",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:37:26.344529Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.4.313.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/46jqvjw31c8ljwb9mnhw65wgjrp9y0jg-vulkan-loader-1.4.313.0-dev",
+        "out": "/nix/store/8bihsc6v1874nmkz29jkni8w3arp0811-vulkan-loader-1.4.313.0"
+      },
+      "system": "aarch64-linux",
+      "group": "vulkan",
+      "priority": 5
+    },
+    {
+      "attr_path": "vulkan-loader",
+      "broken": false,
+      "derivation": "/nix/store/64dcjpqmq5vwcmk2lp21g8qqw2dzn9qc-vulkan-loader-1.4.313.0.drv",
+      "description": "LunarG Vulkan loader",
+      "install_id": "vulkan-loader",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "vulkan-loader-1.4.313.0",
+      "pname": "vulkan-loader",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:14:26.750907Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.4.313.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/j7mrgmgrxwcscrpnmvs0159q308d5wd0-vulkan-loader-1.4.313.0-dev",
+        "out": "/nix/store/mcc5zsprwwrkxbvi2j1s2kvhfx9pk23a-vulkan-loader-1.4.313.0"
+      },
+      "system": "x86_64-linux",
+      "group": "vulkan",
+      "priority": 5
+    },
+    {
+      "attr_path": "x11",
+      "broken": false,
+      "derivation": "/nix/store/s7yggs915ikj2dbgmgk2j53id845q985-xlibs-wrapper.drv",
+      "install_id": "x11",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c07b471b52be8fbc49a7dc194e9b37a6e19ee04d",
+      "name": "xlibs-wrapper",
+      "pname": "x11",
+      "rev": "c07b471b52be8fbc49a7dc194e9b37a6e19ee04d",
+      "rev_count": 348581,
+      "rev_date": "2022-01-25T03:21:06Z",
+      "scrape_date": "2024-08-15T20:52:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "xlibs-wrapper",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/h8b00qmpjyk2lwywsxgssjy3w4kwmyxb-xlibs-wrapper"
+      },
+      "system": "aarch64-linux",
+      "group": "x11",
+      "priority": 5
+    },
+    {
+      "attr_path": "x11",
+      "broken": false,
+      "derivation": "/nix/store/6i1c4g5xfy2v0n0c2wp7jz42sh1j83db-xlibs-wrapper.drv",
+      "install_id": "x11",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c07b471b52be8fbc49a7dc194e9b37a6e19ee04d",
+      "name": "xlibs-wrapper",
+      "pname": "x11",
+      "rev": "c07b471b52be8fbc49a7dc194e9b37a6e19ee04d",
+      "rev_count": 348581,
+      "rev_date": "2022-01-25T03:21:06Z",
+      "scrape_date": "2024-08-15T20:52:42Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "xlibs-wrapper",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/7qr5jjw3hcd9klm5ngzdkac5ik4k21bc-xlibs-wrapper"
+      },
+      "system": "x86_64-linux",
+      "group": "x11",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.cuda_cccl",
+      "broken": false,
+      "derivation": "/nix/store/jgcpl4mpq6hgr1ywsx2ha83369njingc-cuda_cccl-12.8.90.drv",
+      "description": "CXX Core Compute Libraries. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cccl",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cuda_cccl-12.8.90",
+      "pname": "cuda_cccl",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.772166Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/jlcncmzpdmd5ypnj2cx071ic9c7w8py4-cuda_cccl-12.8.90-dev",
+        "out": "/nix/store/y07qvhg3l4djc5whj34lsjiay06w20xm-cuda_cccl-12.8.90"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 3
+    },
+    {
+      "attr_path": "cudaPackages.cuda_cccl",
+      "broken": false,
+      "derivation": "/nix/store/4h63l44wjalzv43iyg7i84wq5q60gw7y-cuda_cccl-12.8.90.drv",
+      "description": "CXX Core Compute Libraries. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cccl",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cuda_cccl-12.8.90",
+      "pname": "cuda_cccl",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.861320Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/y5aixf3znnya53gmbi23b8ccss6zl90a-cuda_cccl-12.8.90-dev",
+        "out": "/nix/store/4msmhjdhxkrwr2zhdj2sc6afv46x0qbb-cuda_cccl-12.8.90"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 3
+    },
+    {
+      "attr_path": "cmake",
+      "broken": false,
+      "derivation": "/nix/store/xgv9mpg1zmzabixwha18gzn1zqzrygwf-cmake-3.31.7.drv",
+      "description": "Cross-platform, open-source build system generator",
+      "install_id": "cmake",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cmake-3.31.7",
+      "pname": "cmake",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.625204Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.31.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/y23yv31zv0gn822cprm7njx28pdv3n6m-cmake-3.31.7-debug",
+        "out": "/nix/store/2pbjx4gij8dvgs4cmh01dny1727jy5mi-cmake-3.31.7"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cmake",
+      "broken": false,
+      "derivation": "/nix/store/6qv451jjkcppi57q8s2165417nxhc2g5-cmake-3.31.7.drv",
+      "description": "Cross-platform, open-source build system generator",
+      "install_id": "cmake",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cmake-3.31.7",
+      "pname": "cmake",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.697723Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.31.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/f8a07z4aiw19aywcvs70s30fbghq6i0d-cmake-3.31.7-debug",
+        "out": "/nix/store/a3w3ka2d796ghlhf31il839c0658m5ih-cmake-3.31.7"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.libcublas",
+      "broken": false,
+      "derivation": "/nix/store/v7hy5dgq9hdjvfpi2d2bdsiri9ayy7fh-libcublas-12.8.4.1.drv",
+      "description": "CUDA cuBLAS. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cublas",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libcublas-12.8.4.1",
+      "pname": "libcublas",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.779778Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.4.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/2jdmcdqc4vswbib5pfgb1xkhnfy89ddy-libcublas-12.8.4.1-dev",
+        "lib": "/nix/store/87cf59jnjc14jryk88wkgfd436891wl0-libcublas-12.8.4.1-lib",
+        "out": "/nix/store/34kwf3gxz8ypk2ys7fz4msd0z1x3msn4-libcublas-12.8.4.1",
+        "static": "/nix/store/sghd8d2h5ysg5mvfdxdrqdvd8hsc6ymb-libcublas-12.8.4.1-static"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.libcublas",
+      "broken": false,
+      "derivation": "/nix/store/9j5jci568zayk8vln4qgiazg2xmfb9wk-libcublas-12.8.4.1.drv",
+      "description": "CUDA cuBLAS. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cublas",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libcublas-12.8.4.1",
+      "pname": "libcublas",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.871022Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.4.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/cn02jk4vmfpmh2k2ckbgk8mvzx60243d-libcublas-12.8.4.1-dev",
+        "lib": "/nix/store/bpgbzpzv10raqcvk55xsrhb9vbg96r6g-libcublas-12.8.4.1-lib",
+        "out": "/nix/store/wm4kqb46n1pkr4w415b861bhwxifqncp-libcublas-12.8.4.1",
+        "static": "/nix/store/6b72nlpccsk5jx9mvx583s200q98d6yx-libcublas-12.8.4.1-static"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.cuda_profiler_api",
+      "broken": false,
+      "derivation": "/nix/store/ks6a57fzr7h1s60k3nklwqqvs4scxkm1-cuda_profiler_api-12.8.90.drv",
+      "description": "CUDA Profiler API. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cuda_profiler_api",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cuda_profiler_api-12.8.90",
+      "pname": "cuda_profiler_api",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.775075Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/8vr1rhb25nv8pppa5r8gnc2v7zg1q72l-cuda_profiler_api-12.8.90-dev",
+        "out": "/nix/store/qx2d5nr747l3zb22yz5qvis3xpxrj47b-cuda_profiler_api-12.8.90"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 6
+    },
+    {
+      "attr_path": "cudaPackages.cuda_profiler_api",
+      "broken": false,
+      "derivation": "/nix/store/08mpis60inrdsx4f829lfnb455flkxrs-cuda_profiler_api-12.8.90.drv",
+      "description": "CUDA Profiler API. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cuda_profiler_api",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cuda_profiler_api-12.8.90",
+      "pname": "cuda_profiler_api",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.865542Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/kf4rm0iblggskkklk7h8klqbzwna95gy-cuda_profiler_api-12.8.90-dev",
+        "out": "/nix/store/i6nqywg6xqa96rjk2sp0yng4s34d9ly6-cuda_profiler_api-12.8.90"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 6
+    },
+    {
+      "attr_path": "cudaPackages.libcufft",
+      "broken": false,
+      "derivation": "/nix/store/sw3f4vqwkczsn7c2ybszij9xx1zas9pc-libcufft-11.3.3.83.drv",
+      "description": "CUDA cuFFT. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cufft",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libcufft-11.3.3.83",
+      "pname": "libcufft",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.780219Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "11.3.3.83",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/i93anz7wx6zmhlwyaql6xr8v6h30gziw-libcufft-11.3.3.83-dev",
+        "lib": "/nix/store/zr7wpz7673l423w9qf3jwlzb9ynq1n6p-libcufft-11.3.3.83-lib",
+        "out": "/nix/store/d9snfbx55yf9a5ahk4lh0dwm0c3gbzpd-libcufft-11.3.3.83",
+        "static": "/nix/store/v682r4hyw2d7pfklipbrv2p40j5rlkcb-libcufft-11.3.3.83-static"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 4
+    },
+    {
+      "attr_path": "cudaPackages.libcufft",
+      "broken": false,
+      "derivation": "/nix/store/b0wzxwjqpn7pv0cmarpijcssz3pi8mbx-libcufft-11.3.3.83.drv",
+      "description": "CUDA cuFFT. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cufft",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libcufft-11.3.3.83",
+      "pname": "libcufft",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.871255Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "11.3.3.83",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/4ixihar8h7hly4rd8z8jics1a0b2pyy7-libcufft-11.3.3.83-dev",
+        "lib": "/nix/store/g3kfsnm2yrb7hnxwcv8hxw96bsjmw35y-libcufft-11.3.3.83-lib",
+        "out": "/nix/store/10x4nqcws74vviy6pm0r6f1cwayx5pw3-libcufft-11.3.3.83",
+        "static": "/nix/store/36wj95pnnfvmk432845cgswajvrnjbyp-libcufft-11.3.3.83-static"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 4
+    },
+    {
+      "attr_path": "cudaPackages.libcurand",
+      "broken": false,
+      "derivation": "/nix/store/h87l129r64kknrk92b1q7bcaban4kjjq-libcurand-10.3.9.90.drv",
+      "description": "CUDA cuRAND. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "curand",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libcurand-10.3.9.90",
+      "pname": "libcurand",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.780674Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "10.3.9.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/k966hw9w4xpa2qm5g3ip52aq4a8vn0mx-libcurand-10.3.9.90-dev",
+        "lib": "/nix/store/kqlkjkbdp5gvgasspbbknzs84cv6lhqq-libcurand-10.3.9.90-lib",
+        "out": "/nix/store/lrfymhlci5a0ak2sj5v1bzid9jb334g5-libcurand-10.3.9.90",
+        "static": "/nix/store/4jwy4d0266rjj1nxy26wrl4zhywn2jp8-libcurand-10.3.9.90-static"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.libcurand",
+      "broken": false,
+      "derivation": "/nix/store/b1pacanjc3cp40lkvjkc05zhafma4j6d-libcurand-10.3.9.90.drv",
+      "description": "CUDA cuRAND. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "curand",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libcurand-10.3.9.90",
+      "pname": "libcurand",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.871730Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "10.3.9.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/w8iwh5hmv8glz94g5xj814g7ljpl8qgc-libcurand-10.3.9.90-dev",
+        "lib": "/nix/store/awfs2mi1k1fandhh4kksmbwcmaq4j2vi-libcurand-10.3.9.90-lib",
+        "out": "/nix/store/6bvm0bsbid4fr3byhr4q7nv8rpayqbcn-libcurand-10.3.9.90",
+        "static": "/nix/store/6sgbl3cg2iicm7ph0ab2d3gc1xl0r4pi-libcurand-10.3.9.90-static"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.libcusolver",
+      "broken": false,
+      "derivation": "/nix/store/jw5y8qc1zwa7l3kwqglg7hccl5qb4rwb-libcusolver-11.7.3.90.drv",
+      "description": "CUDA cuSOLVER. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cusolver",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libcusolver-11.7.3.90",
+      "pname": "libcusolver",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.780894Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "11.7.3.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/pwx22yjhi01kgws87d8nc9w47c8msjf8-libcusolver-11.7.3.90-dev",
+        "lib": "/nix/store/yp7v3hzdpd42z3ps2z9cgijwh8wkfnix-libcusolver-11.7.3.90-lib",
+        "out": "/nix/store/x9icd9ir5wjrfb2b5bd78qmywzn15vj9-libcusolver-11.7.3.90",
+        "static": "/nix/store/dmwk0jdljr0i1p68wn1f0a0bznj7i24z-libcusolver-11.7.3.90-static"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.libcusolver",
+      "broken": false,
+      "derivation": "/nix/store/2jqh0ayzzqlhnw327088drffkcb6j35r-libcusolver-11.7.3.90.drv",
+      "description": "CUDA cuSOLVER. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cusolver",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libcusolver-11.7.3.90",
+      "pname": "libcusolver",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.871960Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "11.7.3.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/3banrfy8pwgqgklkfn1gwp15yksklavi-libcusolver-11.7.3.90-dev",
+        "lib": "/nix/store/20ln362hmn3phjv5b24clb6zr45hm3sx-libcusolver-11.7.3.90-lib",
+        "out": "/nix/store/1zwilma2vkmia5h6qgfy42d2075k1qzm-libcusolver-11.7.3.90",
+        "static": "/nix/store/jhn0qnlzi5bly2drkizi7xakla2n0715-libcusolver-11.7.3.90-static"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.libcusparse",
+      "broken": false,
+      "derivation": "/nix/store/7hiy8xi254k7ljl1rs0hi9d54nb0g801-libcusparse-12.5.8.93.drv",
+      "description": "CUDA cuSPARSE. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cusparse",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libcusparse-12.5.8.93",
+      "pname": "libcusparse",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.781113Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.5.8.93",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/sraxvplbdk4x0pgliy4wlnbkyr89pkx7-libcusparse-12.5.8.93-dev",
+        "lib": "/nix/store/jjkpcwgnm1c5871ifi17y4fy4cbyd479-libcusparse-12.5.8.93-lib",
+        "out": "/nix/store/zg63pidc5a2mviw6w73pr6vp11bcpsks-libcusparse-12.5.8.93",
+        "static": "/nix/store/35dmxifi0qcilrnhaqxvq0z7njk8qrlj-libcusparse-12.5.8.93-static"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.libcusparse",
+      "broken": false,
+      "derivation": "/nix/store/ppgi65m54lrcawa4v75yhiwh57y65721-libcusparse-12.5.8.93.drv",
+      "description": "CUDA cuSPARSE. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cusparse",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libcusparse-12.5.8.93",
+      "pname": "libcusparse",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.872189Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.5.8.93",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/4ks2bqgv9fpr6kkalx8zidkphpk68qn9-libcusparse-12.5.8.93-dev",
+        "lib": "/nix/store/3brmbgxg4cbh4imi0s0ylb1san27sjhj-libcusparse-12.5.8.93-lib",
+        "out": "/nix/store/472k39lvhc7dha9bp3wgb9jkwk020j0h-libcusparse-12.5.8.93",
+        "static": "/nix/store/qlvfqrl01ply5jaqnj7rwy1z1h3y7a6s-libcusparse-12.5.8.93-static"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gcc",
+      "broken": false,
+      "derivation": "/nix/store/jwzm380gzmzmjprxf1k1qlkv4y2dmcr2-gcc-wrapper-14.3.0.drv",
+      "description": "GNU Compiler Collection, version 14.3.0 (wrapper script)",
+      "install_id": "gcc",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "gcc-wrapper-14.3.0",
+      "pname": "gcc",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:11.677239Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "14.3.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/g38fw909lkir925zw1mzxg6mgwls95hc-gcc-wrapper-14.3.0-info",
+        "man": "/nix/store/m74yzciid5w40c1y526j1xvg67xc9skg-gcc-wrapper-14.3.0-man",
+        "out": "/nix/store/0r34311s7lka3iisjvhdaqpblqyk6g9f-gcc-wrapper-14.3.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gcc",
+      "broken": false,
+      "derivation": "/nix/store/n788bcf27q73r0pk73a61ayc7vq9rxip-gcc-wrapper-14.3.0.drv",
+      "description": "GNU Compiler Collection, version 14.3.0 (wrapper script)",
+      "install_id": "gcc",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "gcc-wrapper-14.3.0",
+      "pname": "gcc",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:01.862409Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "14.3.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/2r31f7wxsq5qdbl6d3dx03rwgxyhvvry-gcc-wrapper-14.3.0-info",
+        "man": "/nix/store/jiivm432bvnzhrnsf8xr9115z7b2l5x2-gcc-wrapper-14.3.0-man",
+        "out": "/nix/store/67x7pknz0qa2j16x02idf0x98lpcspah-gcc-wrapper-14.3.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnumake",
+      "broken": false,
+      "derivation": "/nix/store/8q7z6mjhlx289kxkdjwi6i0j64nzl908-gnumake-4.4.1.drv",
+      "description": "Tool to control the generation of non-source files from sources",
+      "install_id": "gnumake",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "gnumake-4.4.1",
+      "pname": "gnumake",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:12.305725Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.4.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/q92zl65186ayqg0f6vvhzldyi5bhpc70-gnumake-4.4.1-debug",
+        "info": "/nix/store/ygnz9sgg6xbvvn6q4242jq9a4w0hfr57-gnumake-4.4.1-info",
+        "man": "/nix/store/mnzb2cgp3hpvw3i5dn4bccs6ln4cnkpc-gnumake-4.4.1-man",
+        "out": "/nix/store/9ccm93c2lj2kb6m175grf8775w3yzvng-gnumake-4.4.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnumake",
+      "broken": false,
+      "derivation": "/nix/store/clqgcxxr6iqqzcr4rgyb1dk4sqv0nyyh-gnumake-4.4.1.drv",
+      "description": "Tool to control the generation of non-source files from sources",
+      "install_id": "gnumake",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "gnumake-4.4.1",
+      "pname": "gnumake",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:02.580580Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.4.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/8vg51i45l7bqcc2qfcnjgppxlsfzi11h-gnumake-4.4.1-debug",
+        "info": "/nix/store/hs8b0bwzv4q3w8mf4pbq8l7v0vnjj0f9-gnumake-4.4.1-info",
+        "man": "/nix/store/n414mxklk1mxyk9syhbbh6j0d92l4ggi-gnumake-4.4.1-man",
+        "out": "/nix/store/kzf67ka1wa2055bnsdrnqnv59md9xbxa-gnumake-4.4.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.libnpp",
+      "broken": false,
+      "derivation": "/nix/store/d3772ljllkzr6x0gqrfycmc3iwsr79vy-libnpp-12.3.3.100.drv",
+      "description": "CUDA NPP. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "npp",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libnpp-12.3.3.100",
+      "pname": "libnpp",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.781331Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.3.3.100",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/5imsjmifr8k7qla61yrr30zr4gr1251r-libnpp-12.3.3.100-dev",
+        "lib": "/nix/store/gk8irn3gfi56p9yynm64jmywvy744qz9-libnpp-12.3.3.100-lib",
+        "out": "/nix/store/vllzj3k275b2s1mrim36msndwiw9k3rj-libnpp-12.3.3.100",
+        "static": "/nix/store/j8s1pxsh14lspxz6pdxzp48k5g8fkf4b-libnpp-12.3.3.100-static"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.libnpp",
+      "broken": false,
+      "derivation": "/nix/store/l0jbkcaj8g450kd026zagk4sp5pr13xw-libnpp-12.3.3.100.drv",
+      "description": "CUDA NPP. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "npp",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libnpp-12.3.3.100",
+      "pname": "libnpp",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.872419Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.3.3.100",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/w0ji96725yxnbnvpifbm9pd8350xqxw9-libnpp-12.3.3.100-dev",
+        "lib": "/nix/store/6253dq5wqm4kka8kc85nhnz3vlv7imy6-libnpp-12.3.3.100-lib",
+        "out": "/nix/store/67vjvn633g2jllm5lla9ygffdb4m0z2h-libnpp-12.3.3.100",
+        "static": "/nix/store/91ylp7np48llgj6bz96s239ad2j6xv4x-libnpp-12.3.3.100-static"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.cuda_nvcc",
+      "broken": false,
+      "derivation": "/nix/store/lzda1gbpzhf4rwzpwlycbpxjyqpdc4y7-cuda_nvcc-12.8.93.drv",
+      "description": "CUDA NVCC. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "nvcc",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cuda_nvcc-12.8.93",
+      "pname": "cuda_nvcc",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.773721Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.93",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/d605v902hpq8z2n1y6ckwkhwyvfy5phm-cuda_nvcc-12.8.93",
+        "static": "/nix/store/2kind49rn8vdw29c0ydp8a0yq7c7ksr7-cuda_nvcc-12.8.93-static"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.cuda_nvcc",
+      "broken": false,
+      "derivation": "/nix/store/5vflmpadgsyn8y4y8zff024kfr85628n-cuda_nvcc-12.8.93.drv",
+      "description": "CUDA NVCC. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "nvcc",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cuda_nvcc-12.8.93",
+      "pname": "cuda_nvcc",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.863446Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.93",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/fajva8n7n0xl0xnij5n9i88b50qwmiwi-cuda_nvcc-12.8.93",
+        "static": "/nix/store/i2axas13glcc5krmm9i43d927x7hdx57-cuda_nvcc-12.8.93-static"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.libnvjitlink",
+      "broken": false,
+      "derivation": "/nix/store/xv7pqr799fcydr8f8xls3ppn084k1r6b-libnvjitlink-12.8.93.drv",
+      "description": "NVIDIA compiler library for JIT LTO functionality. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "nvjitlink",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libnvjitlink-12.8.93",
+      "pname": "libnvjitlink",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.782016Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.93",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/cc3ahkvpffvj1q39riszsi4pbm679jf9-libnvjitlink-12.8.93-dev",
+        "lib": "/nix/store/gzyq3jldp638f7kv01nj2xnj5ivx5aa1-libnvjitlink-12.8.93-lib",
+        "out": "/nix/store/swxg1crfyxbvrhzkzhdh5xdl2kvzb86w-libnvjitlink-12.8.93",
+        "static": "/nix/store/bp7nyv6qvgpw5v0yd0lf7jisw75r996k-libnvjitlink-12.8.93-static"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.libnvjitlink",
+      "broken": false,
+      "derivation": "/nix/store/lhr53yzw89bz1xn5m69p57rlnv63ckk0-libnvjitlink-12.8.93.drv",
+      "description": "NVIDIA compiler library for JIT LTO functionality. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "nvjitlink",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libnvjitlink-12.8.93",
+      "pname": "libnvjitlink",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.873129Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.93",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/6w6q9p09ck62vi8bl5sjvm0xcn7ayc4w-libnvjitlink-12.8.93-dev",
+        "lib": "/nix/store/d5adljba58v4h3xbb59j3n2zjqja9w06-libnvjitlink-12.8.93-lib",
+        "out": "/nix/store/whh5r3splwb1na4hnjsys75svrjgpp7f-libnvjitlink-12.8.93",
+        "static": "/nix/store/fs2ry3qd92aik3jzf7h3dcphbnv9wp1d-libnvjitlink-12.8.93-static"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.libnvjpeg",
+      "broken": false,
+      "derivation": "/nix/store/grd8q2y1yxhz7ylhsdwp9zx991kircpp-libnvjpeg-12.3.5.92.drv",
+      "description": "CUDA nvJPEG. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "nvjpeg",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libnvjpeg-12.3.5.92",
+      "pname": "libnvjpeg",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.782235Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.3.5.92",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/mzk4ild7k3m9drv9i02lbj0myjh1jay5-libnvjpeg-12.3.5.92-dev",
+        "lib": "/nix/store/n1032yl3035dkd2p3cfnnjsy6ii4wnby-libnvjpeg-12.3.5.92-lib",
+        "out": "/nix/store/xfg7gklqhbc5c2r0sfqzkgf45n8bjdbq-libnvjpeg-12.3.5.92",
+        "static": "/nix/store/9i7scp0jmb4cjlrnhz5040xanvp91b3x-libnvjpeg-12.3.5.92-static"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.libnvjpeg",
+      "broken": false,
+      "derivation": "/nix/store/851lfqbinbpmmrl09hz44m6089j5nr1q-libnvjpeg-12.3.5.92.drv",
+      "description": "CUDA nvJPEG. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "nvjpeg",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "libnvjpeg-12.3.5.92",
+      "pname": "libnvjpeg",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.873362Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.3.5.92",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/hyfqlp9n373k7hbfvna94iqzhd1jqqha-libnvjpeg-12.3.5.92-dev",
+        "lib": "/nix/store/wnb5pc966rj0x15h2nicdvph96qgkhzz-libnvjpeg-12.3.5.92-lib",
+        "out": "/nix/store/cjhd3bzszyf659ydflsd1faq7v361kfm-libnvjpeg-12.3.5.92",
+        "static": "/nix/store/x9s9ll4dsjjh6cvll1alkvc6snaxfdmf-libnvjpeg-12.3.5.92-static"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.cuda_nvrtc",
+      "broken": false,
+      "derivation": "/nix/store/svrk2a4zjyl59dykdyprp2lhpxc3zwr3-cuda_nvrtc-12.8.93.drv",
+      "description": "CUDA NVRTC. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "nvrtc",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cuda_nvrtc-12.8.93",
+      "pname": "cuda_nvrtc",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.774619Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.93",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/5x7mxx62za0da0jj6qikzb37cqc1rvvh-cuda_nvrtc-12.8.93-dev",
+        "lib": "/nix/store/8c5sh4mhdjh6wmbyg34a8vb2mn5dc5g2-cuda_nvrtc-12.8.93-lib",
+        "out": "/nix/store/x5i119arwjgi3s6kbpffp7gar5s6nimc-cuda_nvrtc-12.8.93",
+        "static": "/nix/store/yqiawassjxihq88x8zp2fzccbkapnfsa-cuda_nvrtc-12.8.93-static"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.cuda_nvrtc",
+      "broken": false,
+      "derivation": "/nix/store/ljnhpqlvdw4q24yc3pjp4445am3f5zja-cuda_nvrtc-12.8.93.drv",
+      "description": "CUDA NVRTC. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "nvrtc",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cuda_nvrtc-12.8.93",
+      "pname": "cuda_nvrtc",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.864606Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.93",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/km1knlqkmwbb0b4m3pgibl6a2qrk9bj5-cuda_nvrtc-12.8.93-dev",
+        "lib": "/nix/store/mvlx0087n751wps4r2gcydxf1mxbycyw-cuda_nvrtc-12.8.93-lib",
+        "out": "/nix/store/q63zgk8nidhwynwnjpn5vslzrpxxlz1z-cuda_nvrtc-12.8.93",
+        "static": "/nix/store/rkfgprja7nmx0hsb9g2r9cfs4hkfmn02-cuda_nvrtc-12.8.93-static"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.cuda_nvtx",
+      "broken": false,
+      "derivation": "/nix/store/rk0d36j2xvdw02rik0gcsgy6lprfbvhf-cuda_nvtx-12.8.90.drv",
+      "description": "CUDA NVTX. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "nvtx",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cuda_nvtx-12.8.90",
+      "pname": "cuda_nvtx",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.774857Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/y5i372lnik8yb4f7pya7idvcjph7y1xj-cuda_nvtx-12.8.90-dev",
+        "lib": "/nix/store/w8riqcg98pi3lrpns5w7fl2fma088ha0-cuda_nvtx-12.8.90-lib",
+        "out": "/nix/store/azqmm100g3p7h3zwfs55jykybh3mapfj-cuda_nvtx-12.8.90"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.cuda_nvtx",
+      "broken": false,
+      "derivation": "/nix/store/1pdj46cp4a8q37jbi435435h34jlksz0-cuda_nvtx-12.8.90.drv",
+      "description": "CUDA NVTX. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "nvtx",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cuda_nvtx-12.8.90",
+      "pname": "cuda_nvtx",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.864849Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/3qaxxcis1rndng2hwbiixk97g7m6hp9y-cuda_nvtx-12.8.90-dev",
+        "lib": "/nix/store/76q4p7cpwzmv4vi59jgk3cx7q2lg0alz-cuda_nvtx-12.8.90-lib",
+        "out": "/nix/store/rf3pn0afa7wyrznk4sr2mk4aq2cg6gsg-cuda_nvtx-12.8.90"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.cuda_cudart",
+      "broken": false,
+      "derivation": "/nix/store/bwlnqzmx12pdg6gjwi09h36ys3fq0j7w-cuda_cudart-12.8.90.drv",
+      "description": "CUDA Runtime (cudart). By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "rt",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cuda_cudart-12.8.90",
+      "pname": "cuda_cudart",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T01:35:10.772382Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/wfwvj1y3gdnzih0hndz9sgk67afb5k8h-cuda_cudart-12.8.90-dev",
+        "lib": "/nix/store/x12zsg0s1zizw86adsb16kx8vb4rp2h5-cuda_cudart-12.8.90-lib",
+        "out": "/nix/store/xmw8hjzqm3fzcd3xc15ysry9apwjxyc5-cuda_cudart-12.8.90",
+        "static": "/nix/store/km0g7vvi9nwckdr7b24sl1g1gifdg2x7-cuda_cudart-12.8.90-static",
+        "stubs": "/nix/store/xn5s8xshdbwr31b5lz8h3lys0x2ajhh1-cuda_cudart-12.8.90-stubs"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 4
+    },
+    {
+      "attr_path": "cudaPackages.cuda_cudart",
+      "broken": false,
+      "derivation": "/nix/store/4njznrsp5vq72g0qk3zjx2402fz30yv0-cuda_cudart-12.8.90.drv",
+      "description": "CUDA Runtime (cudart). By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "rt",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "name": "cuda_cudart-12.8.90",
+      "pname": "cuda_cudart",
+      "rev": "fbcf476f790d8a217c3eab4e12033dc4a0f6d23c",
+      "rev_count": 844474,
+      "rev_date": "2025-08-14T15:51:38Z",
+      "scrape_date": "2025-08-16T02:12:00.861550Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/rd6y98531ngnslcv6zpdxpgg0ga3w81z-cuda_cudart-12.8.90-dev",
+        "lib": "/nix/store/31wgl4db2zq67jlw6nk1rzggb36isc44-cuda_cudart-12.8.90-lib",
+        "out": "/nix/store/3zs15rxhdljjav6whkdj3jb8l9xsqxcd-cuda_cudart-12.8.90",
+        "static": "/nix/store/rfjld4vbg40axrwv2j0m7kx5nhg4rx9c-cuda_cudart-12.8.90-static",
+        "stubs": "/nix/store/qysb36saa8yyirqc1fjlkr9i84p6q3x5-cuda_cudart-12.8.90-stubs"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 4
+    }
+  ]
+}

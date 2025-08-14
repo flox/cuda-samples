@@ -1,0 +1,57 @@
+version = 1
+
+[install]
+# CUDA toolkit components
+# Priorities used below are used to solve conflicts in the LICENSE file
+# provided by each package.
+nvcc.pkg-path = "cudaPackages.cuda_nvcc"
+cccl.pkg-path = "cudaPackages.cuda_cccl"
+cccl.priority = 3
+rt.pkg-path = "cudaPackages.cuda_cudart"
+rt.priority = 4
+nvrtc.pkg-path = "cudaPackages.cuda_nvrtc"
+cufft.pkg-path = "cudaPackages.libcufft"
+cufft.priority = 4
+nvjpeg.pkg-path = "cudaPackages.libnvjpeg"
+cublas.pkg-path = "cudaPackages.libcublas"
+curand.pkg-path = "cudaPackages.libcurand"
+cusparse.pkg-path = "cudaPackages.libcusparse"
+cusolver.pkg-path = "cudaPackages.libcusolver"
+npp.pkg-path = "cudaPackages.libnpp"
+cuda_profiler_api.pkg-path = "cudaPackages.cuda_profiler_api"
+cuda_profiler_api.priority = 6
+nvjitlink.pkg-path = "cudaPackages.libnvjitlink"
+nvtx.pkg-path = "cudaPackages.cuda_nvtx"
+
+# Additional build tools
+cmake.pkg-path = "cmake"
+gnumake.pkg-path = "gnumake"
+gcc.pkg-path = "gcc"
+
+# Dependencies for the samples
+x11.pkg-path = "x11"
+x11.pkg-group = "x11"
+libglut.pkg-path = "libglut"
+libglut.pkg-group = "libglut"
+mpi.pkg-path = "mpi"
+mpi.pkg-group = "mpi"
+freeimage.pkg-path = "freeimage"
+freeimage.pkg-group = "freeimage"
+
+# openGL packages
+gl.pkg-path = "libGL"
+gl.pkg-group = "opengl"
+glu.pkg-path = "libGLU"
+glu.pkg-group = "opengl"
+
+# Vulkan packages
+vulkan-loader.pkg-path = "vulkan-loader"
+vulkan-loader.pkg-group = "vulkan"
+vulkan-headers.pkg-path = "vulkan-headers"
+vulkan-headers.pkg-group = "vulkan"
+glfw = { pkg-path = "glfw-wayland", pkg-group = "vulkan" }
+# Replace the above `glwf` with this one on non-Wayland systems
+# glfw = { pkg-path = "glfw", pkg-group = "vulkan" }
+
+[options]
+systems = [ "x86_64-linux", "aarch64-linux" ]
