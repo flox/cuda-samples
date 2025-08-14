@@ -24,7 +24,12 @@ find_package(OpenGL)
 include(CheckIncludeFile)
 
 # Check for the GLFW/glfw3.h header
-check_include_file("GLFW/glfw3.h" HAVE_GLFW3_H)
+find_path(GLFW_HEADER_DIR GLFW/glfw3.h 
+    PATHS ${CMAKE_PREFIX_PATH}
+    PATH_SUFFIXES include)
+if(GLFW_HEADER_DIR)
+    set(HAVE_GLFW3_H TRUE)
+endif()
 
 # Find GLFW/glfw3.h header for Windows
 if(WIN32)
