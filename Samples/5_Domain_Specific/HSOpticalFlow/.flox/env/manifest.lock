@@ -1,0 +1,415 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "cccl": {
+        "pkg-path": "cudaPackages.cuda_cccl",
+        "priority": 3
+      },
+      "cmake": {
+        "pkg-path": "cmake"
+      },
+      "gcc": {
+        "pkg-path": "gcc"
+      },
+      "gnumake": {
+        "pkg-path": "gnumake"
+      },
+      "nvcc": {
+        "pkg-path": "cudaPackages.cuda_nvcc"
+      },
+      "rt": {
+        "pkg-path": "cudaPackages.cuda_cudart",
+        "priority": 4
+      }
+    },
+    "profile": {
+      "fish": "  abbr build-and-run 'set NAME (basename $PWD) && rm -rf build && mkdir build && cd build && cmake .. && make -j16 && cd .. && \"build/$NAME\"'\n"
+    },
+    "options": {
+      "systems": [
+        "x86_64-linux",
+        "aarch64-linux"
+      ]
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "cudaPackages.cuda_cccl",
+      "broken": false,
+      "derivation": "/nix/store/cnzbmdb1g12rf3wd3j5wc4r5sjwkwvjn-cuda_cccl-12.8.90.drv",
+      "description": "CXX Core Compute Libraries. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cccl",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "cuda_cccl-12.8.90",
+      "pname": "cuda_cccl",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T06:10:22.727756Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/jb8cac8wx08v3h3nxkc76pnbb03ikab8-cuda_cccl-12.8.90-dev",
+        "out": "/nix/store/bpawv074d2zm40g47d7yd06f1rc052ks-cuda_cccl-12.8.90"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 3
+    },
+    {
+      "attr_path": "cudaPackages.cuda_cccl",
+      "broken": false,
+      "derivation": "/nix/store/rqx5ylfkbhvqcaz8pmsfy7bqrhzyzi9p-cuda_cccl-12.8.90.drv",
+      "description": "CXX Core Compute Libraries. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "cccl",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "cuda_cccl-12.8.90",
+      "pname": "cuda_cccl",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T07:10:54.176934Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/7yr33lzq8grph58sh93c90rplqllciyw-cuda_cccl-12.8.90-dev",
+        "out": "/nix/store/iyhydcrqh40bnki411f7vpgdwipfmqy9-cuda_cccl-12.8.90"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 3
+    },
+    {
+      "attr_path": "cmake",
+      "broken": false,
+      "derivation": "/nix/store/mrqbdqxnkpcrkwwgv6hkgnznqffy5bhf-cmake-3.31.7.drv",
+      "description": "Cross-platform, open-source build system generator",
+      "install_id": "cmake",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "cmake-3.31.7",
+      "pname": "cmake",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T06:10:22.574334Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.31.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/cyg5sn57n1d94y1xgnvi3pym27nbbb75-cmake-3.31.7-debug",
+        "out": "/nix/store/9v4ip3df0nx55vwqm1gvfiff0j0as7ik-cmake-3.31.7"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cmake",
+      "broken": false,
+      "derivation": "/nix/store/9j8w4bcicjkza42lizkrrx7sb6jw2qik-cmake-3.31.7.drv",
+      "description": "Cross-platform, open-source build system generator",
+      "install_id": "cmake",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "cmake-3.31.7",
+      "pname": "cmake",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T07:10:54.011965Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.31.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/r93w1wf9a5kdh7nr0yid9qyv02max01l-cmake-3.31.7-debug",
+        "out": "/nix/store/a94d5zmalqava26y3hqsnj5l11l5kl5y-cmake-3.31.7"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gcc",
+      "broken": false,
+      "derivation": "/nix/store/xgd6sn2nbpk6p8hfkwfnaggapfa486id-gcc-wrapper-14.3.0.drv",
+      "description": "GNU Compiler Collection, version 14.3.0 (wrapper script)",
+      "install_id": "gcc",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "gcc-wrapper-14.3.0",
+      "pname": "gcc",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T06:10:23.554107Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "14.3.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/x2q2m245k44wxcskdknl5xdqrsya7fcy-gcc-wrapper-14.3.0-info",
+        "man": "/nix/store/f5k9bkq97gqc4ajmbavv3wxdwcqmng64-gcc-wrapper-14.3.0-man",
+        "out": "/nix/store/hf8w753nxqwkc5y5kjx33fx8fxw2dczp-gcc-wrapper-14.3.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gcc",
+      "broken": false,
+      "derivation": "/nix/store/i9kj1nhzkg91xsq8ny4z4hipl0b42kad-gcc-wrapper-14.3.0.drv",
+      "description": "GNU Compiler Collection, version 14.3.0 (wrapper script)",
+      "install_id": "gcc",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "gcc-wrapper-14.3.0",
+      "pname": "gcc",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T07:10:55.111510Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "14.3.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/12sy2qyk3qir1rg4jdrdnj91jaw50my2-gcc-wrapper-14.3.0-info",
+        "man": "/nix/store/ds5j2vvwhdvfgkjp7jnfx82bqswks46x-gcc-wrapper-14.3.0-man",
+        "out": "/nix/store/95k9rsn1zsw1yvir8mj824ldhf90i4qw-gcc-wrapper-14.3.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnumake",
+      "broken": false,
+      "derivation": "/nix/store/876aq0p8d0z7sfyjdawn9mrdfnv7n458-gnumake-4.4.1.drv",
+      "description": "Tool to control the generation of non-source files from sources",
+      "install_id": "gnumake",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "gnumake-4.4.1",
+      "pname": "gnumake",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T06:10:24.182468Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.4.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/j8lcp5zjdq0l0ipvji7s13vdc53nzcki-gnumake-4.4.1-debug",
+        "info": "/nix/store/8922q241lh4qbxd2g7jxsnjnkfmgap3z-gnumake-4.4.1-info",
+        "man": "/nix/store/0a4l47b9sqc28ssi5hsq21ivs2hmbzcp-gnumake-4.4.1-man",
+        "out": "/nix/store/9cns3585v908dwbf5nfqqjghv955ndrq-gnumake-4.4.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gnumake",
+      "broken": false,
+      "derivation": "/nix/store/riz7jd6hvqpxzxgyhj76ianh96sxhvz4-gnumake-4.4.1.drv",
+      "description": "Tool to control the generation of non-source files from sources",
+      "install_id": "gnumake",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "gnumake-4.4.1",
+      "pname": "gnumake",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T07:10:55.800436Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.4.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/7vrxj6zy7y4a83d2q9585sxmcnkfs9ml-gnumake-4.4.1-debug",
+        "info": "/nix/store/m0ijkc5j3wdawh302pns9b45v9n6nq64-gnumake-4.4.1-info",
+        "man": "/nix/store/ha44mgbdcrzgah0dnjd28ax4hrdkc4mm-gnumake-4.4.1-man",
+        "out": "/nix/store/ahxj2q2mrl9z2k77ahqsl9j4zxq1wf84-gnumake-4.4.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.cuda_nvcc",
+      "broken": false,
+      "derivation": "/nix/store/5df50f2har392rd02ga89246wb4q7img-cuda_nvcc-12.8.93.drv",
+      "description": "CUDA NVCC. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "nvcc",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "cuda_nvcc-12.8.93",
+      "pname": "cuda_nvcc",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T06:10:22.729304Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.93",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/nr7ld0ah89959y988c0mb74m5252q4sm-cuda_nvcc-12.8.93",
+        "static": "/nix/store/hzrfwxsr9iw3qzn8lx1af6n0dbgms682-cuda_nvcc-12.8.93-static"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.cuda_nvcc",
+      "broken": false,
+      "derivation": "/nix/store/npvp8q061af5bzbqnzf35wc1v2bq35g1-cuda_nvcc-12.8.93.drv",
+      "description": "CUDA NVCC. By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "nvcc",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "cuda_nvcc-12.8.93",
+      "pname": "cuda_nvcc",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T07:10:54.179077Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.93",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/kd4b1b06ivb4jr3xi98551w7i0qnzzkz-cuda_nvcc-12.8.93",
+        "static": "/nix/store/nkcsks4z926qjficgsi9pardpdkr260n-cuda_nvcc-12.8.93-static"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "cudaPackages.cuda_cudart",
+      "broken": false,
+      "derivation": "/nix/store/vlmjcqgqwq25a09y8sylrxsfmx2y9nyr-cuda_cudart-12.8.90.drv",
+      "description": "CUDA Runtime (cudart). By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "rt",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "cuda_cudart-12.8.90",
+      "pname": "cuda_cudart",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T06:10:22.727976Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/dzy70jicbryndnbrvzmz908bnpdp3rgi-cuda_cudart-12.8.90-dev",
+        "lib": "/nix/store/9nbq7is4fk1jwdvg1fmhqaw2zh7bmqwm-cuda_cudart-12.8.90-lib",
+        "out": "/nix/store/f9kk9ivy4a9b4h11v03bw8mgrqqfkc6b-cuda_cudart-12.8.90",
+        "static": "/nix/store/3bd4x4m18k2krf4pyzprx2fiv95dbs01-cuda_cudart-12.8.90-static",
+        "stubs": "/nix/store/dc21x641p95p9h5dg8bcv0sikyn4fv4m-cuda_cudart-12.8.90-stubs"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 4
+    },
+    {
+      "attr_path": "cudaPackages.cuda_cudart",
+      "broken": false,
+      "derivation": "/nix/store/gib04zb3i7gxsdmzywbbshh1fq5ms0z6-cuda_cudart-12.8.90.drv",
+      "description": "CUDA Runtime (cudart). By downloading and using the packages you accept the terms and conditions of the CUDA EULA",
+      "install_id": "rt",
+      "license": "CUDA Toolkit End User License Agreement (EULA)",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "cuda_cudart-12.8.90",
+      "pname": "cuda_cudart",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T07:10:54.177169Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "12.8.90",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/0m5ly9cqr9fwlpmarfvz2xd222rha2k7-cuda_cudart-12.8.90-dev",
+        "lib": "/nix/store/addcyrkwfz2ghah3vrqvda547xafpgsa-cuda_cudart-12.8.90-lib",
+        "out": "/nix/store/f3xv9lcqp3d1lk6w13rig0q5h2zbjch6-cuda_cudart-12.8.90",
+        "static": "/nix/store/63cf118cvd5vgc5p5fc1xqklqmd8830z-cuda_cudart-12.8.90-static",
+        "stubs": "/nix/store/bibi1spv2x90xm58mvaa7291vchvj2w1-cuda_cudart-12.8.90-stubs"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 4
+    }
+  ]
+}
