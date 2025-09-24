@@ -95,6 +95,9 @@
         "pkg-group": "x11"
       }
     },
+    "profile": {
+      "fish": "  abbr build-and-run 'set NAME (basename $PWD) && rm -rf build && mkdir build && cd build && cmake .. && make -j16 && cd .. && \"build/$NAME\"'\n"
+    },
     "options": {
       "systems": [
         "x86_64-linux",

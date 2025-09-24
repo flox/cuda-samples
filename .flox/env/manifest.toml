@@ -53,5 +53,10 @@ glfw = { pkg-path = "glfw-wayland", pkg-group = "vulkan" }
 # Replace the above `glwf` with this one on non-Wayland systems
 # glfw = { pkg-path = "glfw", pkg-group = "vulkan" }
 
+[profile]
+fish = '''
+  abbr build-and-run 'set NAME (basename $PWD) && rm -rf build && mkdir build && cd build && cmake .. && make -j16 && cd .. && "build/$NAME"'
+'''
+
 [options]
 systems = [ "x86_64-linux", "aarch64-linux" ]
