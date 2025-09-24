@@ -1,0 +1,25 @@
+version = 1
+
+[install]
+# CUDA toolkit components
+# Priorities used below are used to solve conflicts in the LICENSE file
+# provided by each package.
+nvcc.pkg-path = "cudaPackages.cuda_nvcc"
+cccl.pkg-path = "cudaPackages.cuda_cccl"
+cccl.priority = 3
+rt.pkg-path = "cudaPackages.cuda_cudart"
+rt.priority = 4
+
+# Additional build tools
+cmake.pkg-path = "cmake"
+gnumake.pkg-path = "gnumake"
+gcc.pkg-path = "gcc"
+
+[profile]
+fish = '''
+  abbr build-and-run 'set NAME (basename $PWD) && rm -rf build && mkdir build && cd build && cmake .. && make -j16 && cd .. && "build/$NAME"'
+'''
+
+[options]
+systems = [ "x86_64-linux", "aarch64-linux" ]
+
